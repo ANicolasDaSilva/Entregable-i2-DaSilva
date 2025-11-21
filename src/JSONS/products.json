@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Curso de Desarrollo Web Full Stack",
+    "description": "Aprende HTML, CSS, JavaScript, React y Node.js.",
+    "price": 120,
+    "stock": 20,
+    "image": "img/web_fullstack.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Curso de Inteligencia Artificial",
+    "description": "Machine learning, redes neuronales y modelos modernos.",
+    "price": 150,
+    "stock": 15,
+    "image": "img/ai_course.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Curso de Ciberseguridad",
+    "description": "Hacking ético, vulnerabilidades y protección de sistemas.",
+    "price": 180,
+    "stock": 10,
+    "image": "img/cybersecurity.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Curso de Desarrollo Mobile",
+    "description": "Crea apps para Android y iOS usando Flutter.",
+    "price": 130,
+    "stock": 18,
+    "image": "img/mobile_dev.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Curso de Ciencia de Datos",
+    "description": "Python, análisis de datos, visualización y modelos predictivos.",
+    "price": 160,
+    "stock": 12,
+    "image": "img/data_science.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Curso de Cloud Computing",
+    "description": "Aprende AWS, Azure y GCP desde cero.",
+    "price": 140,
+    "stock": 14,
+    "image": "img/cloud_computing.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Curso de DevOps",
+    "description": "CI/CD, Docker, Kubernetes y automatización.",
+    "price": 170,
+    "stock": 11,
+    "image": "img/devops.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Curso de Blockchain",
+    "description": "Smart contracts, Ethereum y criptografía aplicada.",
+    "price": 155,
+    "stock": 16,
+    "image": "img/blockchain.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Curso de Bases de Datos",
+    "description": "MySQL, PostgreSQL, MongoDB y diseño de bases de datos.",
+    "price": 110,
+    "stock": 22,
+    "image": "img/databases.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Curso de UX/UI Design",
+    "description": "Diseño de interfaces, experiencia de usuario y prototipado.",
+    "price": 125,
+    "stock": 19,
+    "image": "img/ux_ui.jpg"
+  }
+]

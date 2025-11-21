@@ -1,0 +1,6 @@
+.cartWidget {
+    border: none;
+    background-color: green;
+    margin: 20px;
+    cursor: pointer;
+}
