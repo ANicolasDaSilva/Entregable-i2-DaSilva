@@ -6,7 +6,7 @@ function ProductDetail ({product}){
         <div className="productDetail">
             <h3>{product.title}</h3>
             <p>{product.description}</p>
-            <span>{product.price} $</span>
+            <span>{product.price} U$S </span>
             <button className="btn-cart">
                 <ShoppingCart size={32} strokeWidth={1.75} />
                 Carrito
