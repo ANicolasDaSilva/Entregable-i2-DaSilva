@@ -2,81 +2,217 @@
   {
     "id": 1,
     "title": "Curso de Desarrollo Web Full Stack",
-    "description": "Aprende HTML, CSS, JavaScript, React y Node.js.",
+    "description": "Aprende HTML, CSS, JavaScript, React y Node.js desde cero.",
     "price": 120,
-    "stock": 20,
+    "popularity": 95,
     "image": "img/web_fullstack.jpg"
   },
   {
     "id": 2,
-    "title": "Curso de Inteligencia Artificial",
-    "description": "Machine learning, redes neuronales y modelos modernos.",
-    "price": 150,
-    "stock": 15,
-    "image": "img/ai_course.jpg"
+    "title": "JavaScript Avanzado",
+    "description": "Profundiza en funciones avanzadas, asincronía, APIs y patrones modernos.",
+    "price": 90,
+    "popularity": 88,
+    "image": "img/js_avanzado.jpg"
   },
   {
     "id": 3,
-    "title": "Curso de Ciberseguridad",
-    "description": "Hacking ético, vulnerabilidades y protección de sistemas.",
-    "price": 180,
-    "stock": 10,
-    "image": "img/cybersecurity.jpg"
+    "title": "Python para Principiantes",
+    "description": "Curso ideal para iniciar en programación con Python paso a paso.",
+    "price": 85,
+    "popularity": 92,
+    "image": "img/python_basico.jpg"
   },
   {
     "id": 4,
-    "title": "Curso de Desarrollo Mobile",
-    "description": "Crea apps para Android y iOS usando Flutter.",
-    "price": 130,
-    "stock": 18,
-    "image": "img/mobile_dev.jpg"
+    "title": "Machine Learning con Python",
+    "description": "Aprende modelos de regresión, clasificación y uso de librerías como Scikit-learn.",
+    "price": 150,
+    "popularity": 97,
+    "image": "img/ml_python.jpg"
   },
   {
     "id": 5,
-    "title": "Curso de Ciencia de Datos",
-    "description": "Python, análisis de datos, visualización y modelos predictivos.",
-    "price": 160,
-    "stock": 12,
-    "image": "img/data_science.jpg"
+    "title": "React desde Cero",
+    "description": "Crea interfaces modernas con React, Hooks y componentes reutilizables.",
+    "price": 95,
+    "popularity": 93,
+    "image": "img/react_cero.jpg"
   },
   {
     "id": 6,
-    "title": "Curso de Cloud Computing",
-    "description": "Aprende AWS, Azure y GCP desde cero.",
-    "price": 140,
-    "stock": 14,
-    "image": "img/cloud_computing.jpg"
+    "title": "Node.js y Express",
+    "description": "Construye APIs y servidores escalables con Node.js y Express.",
+    "price": 110,
+    "popularity": 89,
+    "image": "img/node_express.jpg"
   },
   {
     "id": 7,
-    "title": "Curso de DevOps",
-    "description": "CI/CD, Docker, Kubernetes y automatización.",
-    "price": 170,
-    "stock": 11,
-    "image": "img/devops.jpg"
+    "title": "Desarrollo de Apps Móviles con Flutter",
+    "description": "Crea apps Android y iOS con un solo código usando Flutter.",
+    "price": 130,
+    "popularity": 94,
+    "image": "img/flutter_apps.jpg"
   },
   {
     "id": 8,
-    "title": "Curso de Blockchain",
-    "description": "Smart contracts, Ethereum y criptografía aplicada.",
-    "price": 155,
-    "stock": 16,
-    "image": "img/blockchain.jpg"
+    "title": "Curso de C++ desde Cero",
+    "description": "Aprende los fundamentos del lenguaje C++ y programación orientada a objetos.",
+    "price": 80,
+    "popularity": 85,
+    "image": "img/cpp_basico.jpg"
   },
   {
     "id": 9,
-    "title": "Curso de Bases de Datos",
-    "description": "MySQL, PostgreSQL, MongoDB y diseño de bases de datos.",
-    "price": 110,
-    "stock": 22,
-    "image": "img/databases.jpg"
+    "title": "Programación en Java",
+    "description": "Domina Java para desarrollo backend, POO y aplicaciones empresariales.",
+    "price": 120,
+    "popularity": 90,
+    "image": "img/java_curso.jpg"
   },
   {
     "id": 10,
-    "title": "Curso de UX/UI Design",
-    "description": "Diseño de interfaces, experiencia de usuario y prototipado.",
-    "price": 125,
-    "stock": 19,
-    "image": "img/ux_ui.jpg"
+    "title": "SQL y Bases de Datos",
+    "description": "Aprende consultas SQL, modelado de datos y gestión de bases relacionales.",
+    "price": 70,
+    "popularity": 87,
+    "image": "img/sql_db.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Kotlin para Android",
+    "description": "Desarrolla aplicaciones Android modernas usando Kotlin.",
+    "price": 115,
+    "popularity": 91,
+    "image": "img/kotlin_android.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Curso de PHP y Laravel",
+    "description": "Aprende a crear proyectos web completos con PHP y Laravel.",
+    "price": 100,
+    "popularity": 82,
+    "image": "img/php_laravel.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Programación en Go (Golang)",
+    "description": "Conoce Go para crear servicios rápidos y eficientes.",
+    "price": 110,
+    "popularity": 86,
+    "image": "img/golang.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Curso de Git y GitHub",
+    "description": "Aprende control de versiones profesional con Git y GitHub.",
+    "price": 40,
+    "popularity": 98,
+    "image": "img/git_github.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Ciberseguridad Básica",
+    "description": "Conoce los fundamentos de seguridad informática y buenas prácticas.",
+    "price": 95,
+    "popularity": 84,
+    "image": "img/ciberseguridad.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Desarrollo de Videojuegos con Unity",
+    "description": "Aprende a crear videojuegos en 2D y 3D con Unity y C#.",
+    "price": 140,
+    "popularity": 93,
+    "image": "img/unity_games.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Diseño de Interfaces UI/UX",
+    "description": "Aprende principios de diseño centrado en el usuario y prototipado.",
+    "price": 85,
+    "popularity": 89,
+    "image": "img/ui_ux.jpg"
+  },
+  {
+    "id": 18,
+    "title": "Docker y Contenedores",
+    "description": "Domina Docker para crear entornos de desarrollo portables.",
+    "price": 100,
+    "popularity": 90,
+    "image": "img/docker_curso.jpg"
+  },
+  {
+    "id": 19,
+    "title": "Inteligencia Artificial para Principiantes",
+    "description": "Aprende conceptos esenciales de IA, modelos básicos y aplicaciones.",
+    "price": 130,
+    "popularity": 96,
+    "image": "img/ia_basico.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Desarrollo Backend con Django",
+    "description": "Crea aplicaciones web robustas usando Django y Python.",
+    "price": 115,
+    "popularity": 91,
+    "image": "img/django_backend.jpg"
+  },
+  {
+    "id": 21,
+    "title": "TypeScript desde Cero",
+    "description": "Aprende TypeScript y lleva tus proyectos JavaScript al siguiente nivel.",
+    "price": 75,
+    "popularity": 88,
+    "image": "img/typescript_curso.jpg"
+  },
+  {
+    "id": 22,
+    "title": "Curso de Rust",
+    "description": "Domina Rust y aprende programación segura y eficiente.",
+    "price": 150,
+    "popularity": 83,
+    "image": "img/rust_curso.jpg"
+  },
+  {
+    "id": 23,
+    "title": "Automatización con Python",
+    "description": "Automatiza tareas, procesos y archivos usando Python.",
+    "price": 90,
+    "popularity": 92,
+    "image": "img/python_auto.jpg"
+  },
+  {
+    "id": 24,
+    "title": "Curso de Blockchain",
+    "description": "Aprende conceptos clave de blockchain, smart contracts y Web3.",
+    "price": 160,
+    "popularity": 89,
+    "image": "img/blockchain.jpg"
+  },
+  {
+    "id": 25,
+    "title": "React Native",
+    "description": "Crea apps móviles nativas usando React Native.",
+    "price": 140,
+    "popularity": 90,
+    "image": "img/react_native.jpg"
+  },
+  {
+    "id": 26,
+    "title": "Testing y QA Automation",
+    "description": "Aprende pruebas automatizadas, Selenium y buenas prácticas QA.",
+    "price": 110,
+    "popularity": 85,
+    "image": "img/qa_testing.jpg"
+  },
+  {
+    "id": 27,
+    "title": "Arquitectura de Software",
+    "description": "Diseña sistemas escalables, patrones de arquitectura y buenas prácticas.",
+    "price": 150,
+    "popularity": 94,
+    "image": "img/arquitectura_software.jpg"
   }
 ]
