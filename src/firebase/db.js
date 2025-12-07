@@ -1,3 +1,5 @@
+/*
+
 import { app } from "./firebase"
 
 const db = getFirestore(app)
@@ -13,3 +15,5 @@ export const getProducts = async() => {
     })
     return products;
 } 
+
+*/

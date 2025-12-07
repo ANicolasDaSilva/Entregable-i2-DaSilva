@@ -1,8 +1,6 @@
-import { useEffect } from "react";
-import ProductDetail from "../ProductDetail/ProductDetail";
+ import ProductDetail from "../ProductDetail/ProductDetail";
 import "./ProductListContainer.css";
-import { useState } from "react";
-import { getFirestore, collection, getDocs } from "firebase/firestore"
+import { useEffect, useState } from "react";
 
 function ProductListContainer() {
 
@@ -11,17 +9,9 @@ function ProductListContainer() {
     useEffect(() => {
         (async () => {
             try {
-                const db = getFirestore(app);
-                const productsCollection = collection(db, "products");
-                const productsSnapshot = await getDocs(productsCollection)
-
-                const productsDb = productsSnapshot.docChanges.map(doc => {
-                    return {
-                        id: doc.id,
-                        ...doc.data()
-                    }
-                })
-                setProducts(productsDb)
+                const response = await fetch("src/JSONS/products.json");
+                const data = await response.json()                
+                setProducts(data)
             } catch (error) {
                 console.log(error);
             }

@@ -1,218 +1,272 @@
 [
   {
     "id": 1,
-    "title": "Curso de Desarrollo Web Full Stack",
-    "description": "Aprende HTML, CSS, JavaScript, React y Node.js desde cero.",
-    "price": 120,
-    "popularity": 95,
-    "image": "img/web_fullstack.jpg"
+    "title": "Campera de Jean Vintage",
+    "description": "Campera de jean resistente estilo retro.",
+    "price": 25.00,
+    "talle": "M",
+    "category": "Abrigos",
+    "stock": 3,
+    "image": "img/campera_jean_vintage.jpg"
   },
   {
     "id": 2,
-    "title": "JavaScript Avanzado",
-    "description": "Profundiza en funciones avanzadas, asincronía, APIs y patrones modernos.",
-    "price": 90,
-    "popularity": 88,
-    "image": "img/js_avanzado.jpg"
+    "title": "Remera Gráfica 80s",
+    "description": "Remera con estampado retro estilo ochentoso.",
+    "price": 7.00,
+    "talle": "L",
+    "category": "Remeras",
+    "stock": 5,
+    "image": "img/remera_80s.jpg"
   },
   {
     "id": 3,
-    "title": "Python para Principiantes",
-    "description": "Curso ideal para iniciar en programación con Python paso a paso.",
-    "price": 85,
-    "popularity": 92,
-    "image": "img/python_basico.jpg"
+    "title": "Pantalón Cargo Verde",
+    "description": "Pantalón con múltiples bolsillos, tela gruesa.",
+    "price": 12.00,
+    "talle": "XL",
+    "category": "Pantalones",
+    "stock": 2,
+    "image": "img/pantalon_cargo_verde.jpg"
   },
   {
     "id": 4,
-    "title": "Machine Learning con Python",
-    "description": "Aprende modelos de regresión, clasificación y uso de librerías como Scikit-learn.",
-    "price": 150,
-    "popularity": 97,
-    "image": "img/ml_python.jpg"
+    "title": "Vestido Floral Vintage",
+    "description": "Vestido ligero con estampado floral antiguo.",
+    "price": 18.00,
+    "talle": "S",
+    "category": "Vestidos",
+    "stock": 4,
+    "image": "img/vestido_floral.jpg"
   },
   {
     "id": 5,
-    "title": "React desde Cero",
-    "description": "Crea interfaces modernas con React, Hooks y componentes reutilizables.",
-    "price": 95,
-    "popularity": 93,
-    "image": "img/react_cero.jpg"
+    "title": "Camisa a Rayas Clásica",
+    "description": "Camisa de algodón con rayas finas.",
+    "price": 10.00,
+    "talle": "L",
+    "category": "Camisas",
+    "stock": 6,
+    "image": "img/camisa_rayas.jpg"
   },
   {
     "id": 6,
-    "title": "Node.js y Express",
-    "description": "Construye APIs y servidores escalables con Node.js y Express.",
-    "price": 110,
-    "popularity": 89,
-    "image": "img/node_express.jpg"
+    "title": "Buzo Hoodie Gris",
+    "description": "Buzo con capucha ideal para días frescos.",
+    "price": 15.00,
+    "talle": "M",
+    "category": "Buzos",
+    "stock": 3,
+    "image": "img/buzo_hoodie_gris.jpg"
   },
   {
     "id": 7,
-    "title": "Desarrollo de Apps Móviles con Flutter",
-    "description": "Crea apps Android y iOS con un solo código usando Flutter.",
-    "price": 130,
-    "popularity": 94,
-    "image": "img/flutter_apps.jpg"
+    "title": "Falda Cuero Sintético Negra",
+    "description": "Falda estilo rock de cuero sintético.",
+    "price": 9.00,
+    "talle": "S",
+    "category": "Faldas",
+    "stock": 2,
+    "image": "img/falda_cuero_negra.jpg"
   },
   {
     "id": 8,
-    "title": "Curso de C++ desde Cero",
-    "description": "Aprende los fundamentos del lenguaje C++ y programación orientada a objetos.",
-    "price": 80,
-    "popularity": 85,
-    "image": "img/cpp_basico.jpg"
+    "title": "Campera Deportiva 90s",
+    "description": "Campera liviana con estilo clásico de los 90.",
+    "price": 20.00,
+    "talle": "L",
+    "category": "Abrigos",
+    "stock": 1,
+    "image": "img/campera_90s.jpg"
   },
   {
     "id": 9,
-    "title": "Programación en Java",
-    "description": "Domina Java para desarrollo backend, POO y aplicaciones empresariales.",
-    "price": 120,
-    "popularity": 90,
-    "image": "img/java_curso.jpg"
+    "title": "Sweater Tejido Bordó",
+    "description": "Sweater grueso de lana tejido a mano.",
+    "price": 14.00,
+    "talle": "M",
+    "category": "Sweaters",
+    "stock": 3,
+    "image": "img/sweater_bordo.jpg"
   },
   {
     "id": 10,
-    "title": "SQL y Bases de Datos",
-    "description": "Aprende consultas SQL, modelado de datos y gestión de bases relacionales.",
-    "price": 70,
-    "popularity": 87,
-    "image": "img/sql_db.jpg"
+    "title": "Short de Jean Clásico",
+    "description": "Short azul de jean estilo básico.",
+    "price": 7.00,
+    "talle": "S",
+    "category": "Shorts",
+    "stock": 5,
+    "image": "img/short_jean.jpg"
   },
   {
     "id": 11,
-    "title": "Kotlin para Android",
-    "description": "Desarrolla aplicaciones Android modernas usando Kotlin.",
-    "price": 115,
-    "popularity": 91,
-    "image": "img/kotlin_android.jpg"
+    "title": "Chomba Polo Azul",
+    "description": "Chomba estilo clásico, tela suave.",
+    "price": 8.00,
+    "talle": "M",
+    "category": "Chombas",
+    "stock": 4,
+    "image": "img/chomba_polo_azul.jpg"
   },
   {
     "id": 12,
-    "title": "Curso de PHP y Laravel",
-    "description": "Aprende a crear proyectos web completos con PHP y Laravel.",
-    "price": 100,
-    "popularity": 82,
-    "image": "img/php_laravel.jpg"
+    "title": "Pollera Midi Estampada",
+    "description": "Pollera estilo vintage con estampado geométrico.",
+    "price": 11.00,
+    "talle": "M",
+    "category": "Faldas",
+    "stock": 2,
+    "image": "img/pollera_midi.jpg"
   },
   {
     "id": 13,
-    "title": "Programación en Go (Golang)",
-    "description": "Conoce Go para crear servicios rápidos y eficientes.",
-    "price": 110,
-    "popularity": 86,
-    "image": "img/golang.jpg"
+    "title": "Campera de Cuero Sintético",
+    "description": "Campera negra estilo moto.",
+    "price": 22.00,
+    "talle": "L",
+    "category": "Abrigos",
+    "stock": 1,
+    "image": "img/campera_cuero_sintetico.jpg"
   },
   {
     "id": 14,
-    "title": "Curso de Git y GitHub",
-    "description": "Aprende control de versiones profesional con Git y GitHub.",
-    "price": 40,
-    "popularity": 98,
-    "image": "img/git_github.jpg"
+    "title": "Pantalón Oxford Negro",
+    "description": "Pantalón tiro alto estilo setentoso.",
+    "price": 13.00,
+    "talle": "M",
+    "category": "Pantalones",
+    "stock": 3,
+    "image": "img/pantalon_oxford.jpg"
   },
   {
     "id": 15,
-    "title": "Ciberseguridad Básica",
-    "description": "Conoce los fundamentos de seguridad informática y buenas prácticas.",
-    "price": 95,
-    "popularity": 84,
-    "image": "img/ciberseguridad.jpg"
+    "title": "Remera Oversize Blanca",
+    "description": "Remera básica holgada de algodón.",
+    "price": 6.00,
+    "talle": "XL",
+    "category": "Remeras",
+    "stock": 7,
+    "image": "img/remera_oversize_blanca.jpg"
   },
   {
     "id": 16,
-    "title": "Desarrollo de Videojuegos con Unity",
-    "description": "Aprende a crear videojuegos en 2D y 3D con Unity y C#.",
-    "price": 140,
-    "popularity": 93,
-    "image": "img/unity_games.jpg"
+    "title": "Sweater Rayado Vintage",
+    "description": "Sweater liviano con rayas horizontales.",
+    "price": 9.00,
+    "talle": "L",
+    "category": "Sweaters",
+    "stock": 4,
+    "image": "img/sweater_rayado.jpg"
   },
   {
     "id": 17,
-    "title": "Diseño de Interfaces UI/UX",
-    "description": "Aprende principios de diseño centrado en el usuario y prototipado.",
-    "price": 85,
-    "popularity": 89,
-    "image": "img/ui_ux.jpg"
+    "title": "Chaleco de Jean",
+    "description": "Chaleco sin mangas estilo retro.",
+    "price": 10.00,
+    "talle": "M",
+    "category": "Chalecos",
+    "stock": 2,
+    "image": "img/chaleco_jean.jpg"
   },
   {
     "id": 18,
-    "title": "Docker y Contenedores",
-    "description": "Domina Docker para crear entornos de desarrollo portables.",
-    "price": 100,
-    "popularity": 90,
-    "image": "img/docker_curso.jpg"
+    "title": "Pantalón Jogger Gris",
+    "description": "Jogger cómodo de algodón.",
+    "price": 10.00,
+    "talle": "L",
+    "category": "Pantalones",
+    "stock": 6,
+    "image": "img/jogger_gris.jpg"
   },
   {
     "id": 19,
-    "title": "Inteligencia Artificial para Principiantes",
-    "description": "Aprende conceptos esenciales de IA, modelos básicos y aplicaciones.",
-    "price": 130,
-    "popularity": 96,
-    "image": "img/ia_basico.jpg"
+    "title": "Remera Bandas Rock",
+    "description": "Remera estilo usado con estampado de banda.",
+    "price": 8.00,
+    "talle": "M",
+    "category": "Remeras",
+    "stock": 5,
+    "image": "img/remera_rock.jpg"
   },
   {
     "id": 20,
-    "title": "Desarrollo Backend con Django",
-    "description": "Crea aplicaciones web robustas usando Django y Python.",
-    "price": 115,
-    "popularity": 91,
-    "image": "img/django_backend.jpg"
+    "title": "Top de Encaje Negro",
+    "description": "Top delicado de encaje.",
+    "price": 5.00,
+    "talle": "S",
+    "category": "Tops",
+    "stock": 3,
+    "image": "img/top_encaje_negro.jpg"
   },
   {
     "id": 21,
-    "title": "TypeScript desde Cero",
-    "description": "Aprende TypeScript y lleva tus proyectos JavaScript al siguiente nivel.",
-    "price": 75,
-    "popularity": 88,
-    "image": "img/typescript_curso.jpg"
+    "title": "Campera Rompeviento",
+    "description": "Rompeviento liviano para media estación.",
+    "price": 14.00,
+    "talle": "L",
+    "category": "Abrigos",
+    "stock": 2,
+    "image": "img/rompeviento.jpg"
   },
   {
     "id": 22,
-    "title": "Curso de Rust",
-    "description": "Domina Rust y aprende programación segura y eficiente.",
-    "price": 150,
-    "popularity": 83,
-    "image": "img/rust_curso.jpg"
+    "title": "Sweater Beige Tejido",
+    "description": "Sweater suave de hilo color beige.",
+    "price": 12.00,
+    "talle": "XL",
+    "category": "Sweaters",
+    "stock": 3,
+    "image": "img/sweater_beige.jpg"
   },
   {
     "id": 23,
-    "title": "Automatización con Python",
-    "description": "Automatiza tareas, procesos y archivos usando Python.",
-    "price": 90,
-    "popularity": 92,
-    "image": "img/python_auto.jpg"
+    "title": "Jean Mom Celeste",
+    "description": "Jean tiro alto estilo vintage.",
+    "price": 14.00,
+    "talle": "M",
+    "category": "Pantalones",
+    "stock": 4,
+    "image": "img/jean_mom.jpg"
   },
   {
     "id": 24,
-    "title": "Curso de Blockchain",
-    "description": "Aprende conceptos clave de blockchain, smart contracts y Web3.",
-    "price": 160,
-    "popularity": 89,
-    "image": "img/blockchain.jpg"
+    "title": "Remera Básica Negra",
+    "description": "Remera liviana de algodón.",
+    "price": 5.00,
+    "talle": "S",
+    "category": "Remeras",
+    "stock": 8,
+    "image": "img/remera_negra.jpg"
   },
   {
     "id": 25,
-    "title": "React Native",
-    "description": "Crea apps móviles nativas usando React Native.",
-    "price": 140,
-    "popularity": 90,
-    "image": "img/react_native.jpg"
+    "title": "Blusa Blanca Vintage",
+    "description": "Blusa elegante con detalles bordados.",
+    "price": 11.00,
+    "talle": "M",
+    "category": "Blusas",
+    "stock": 2,
+    "image": "img/blusa_blanca.jpg"
   },
   {
     "id": 26,
-    "title": "Testing y QA Automation",
-    "description": "Aprende pruebas automatizadas, Selenium y buenas prácticas QA.",
-    "price": 110,
-    "popularity": 85,
-    "image": "img/qa_testing.jpg"
+    "title": "Campera Plumón Liviana",
+    "description": "Campera acolchada liviana.",
+    "price": 18.00,
+    "talle": "L",
+    "category": "Abrigos",
+    "stock": 2,
+    "image": "img/campera_plumon.jpg"
   },
   {
     "id": 27,
-    "title": "Arquitectura de Software",
-    "description": "Diseña sistemas escalables, patrones de arquitectura y buenas prácticas.",
-    "price": 150,
-    "popularity": 94,
-    "image": "img/arquitectura_software.jpg"
+    "title": "Pollera Denim Oscura",
+    "description": "Pollera corta de jean color azul oscuro.",
+    "price": 9.00,
+    "talle": "S",
+    "category": "Faldas",
+    "stock": 3,
+    "image": "img/pollera_denim.jpg"
   }
 ]

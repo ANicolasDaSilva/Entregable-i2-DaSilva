@@ -1,4 +1,5 @@
 import "./Navbar.css"
+import Filters from "../Filters/Filter";
 import CartWidget from "../Cartwidget/CartWidget"
 
 function Navbar() {
@@ -6,9 +7,10 @@ function Navbar() {
     
       <nav className="navbar">
         <ul>
-          <li> Tools </li>
+          <li> Baul </li>
           <li> Contacto </li>
         </ul>
+        <Filters/>
         <CartWidget/>
       </nav>
     
