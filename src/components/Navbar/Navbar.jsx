@@ -9,7 +9,7 @@ function Navbar() {
       <nav className="navbar">
         <ul>
           <li> Baul </li>
-          <li> <NavLink to={"/src/components/Contacts/Contacts.jsx"}> Contacto</NavLink> </li>
+          <li> <NavLink to={"./contact"}> Contactos </NavLink> </li>
         </ul>
         <Filters/>
         <CartWidget/>

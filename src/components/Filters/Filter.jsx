@@ -1,33 +1,49 @@
-import { useState } from "react"
-// import { data } from "react-router";
+import { useEffect, useState } from "react"
+import { data } from "react-router";
 
 function Filter (){
 
-    /* const productFilter = data.filter(product => {
-    const [filters, setFilters] = useState("all")
-        if (filters === "all"){
-            setFilters(data)
-        }
-        return product.category === filters;
-    })*/
+    const [filter, setFilter] = useState(data)
+
+    useEffect(() => {
+        (async () => {
+            try {
+                const response = await fetch("/products.json");
+                if (filter === data) {             
+                    setFilter(await response.json())}
+            } catch (error) {
+                console.log(error);
+            }
+        })();
+    }, []);
+
+
 
     return(
         <div>
             <label htmlFor="category"> Categoria </label>
-            <select onChange={(e)=> {setFilters(e.target.value)}}>
-                <option onClick={()=> setFilters("all")}> Todo </option>
-                <option onClick={()=> setFilters("abrigos")}> Abrigos </option>
-                <option onClick={()=> setFilters("remeras")}> Remeras </option>
-                <option onClick={()=> setFilters("pantalones")}> Pantalones </option>
-                <option onClick={()=> setFilters("vestidos")}> Vestidos </option>
-                <option onClick={()=> setFilters("camisas")}> Camisas </option>
-                <option onClick={()=> setFilters("buzos")}> Buzos </option>
-                <option onClick={()=> setFilters("sweaters")}> Sweaters </option>
+            <select>
+                <option onClick={()=> setFilter(data)}> Todo </option>
+                <option onClick={()=> setFilter("abrigos")}> Abrigos </option>
+                <option onClick={()=> setFilter("remeras")}> Remeras </option>
+                <option onClick={()=> setFilter("pantalones")}> Pantalones </option>
+                <option onClick={()=> setFilter("vestidos")}> Vestidos </option>
+                <option onClick={()=> setFilter("camisas")}> Camisas </option>
+                <option onClick={()=> setFilter("buzos")}> Buzos </option>
+                <option onClick={()=> setFilter("sweaters")}> Sweaters </option>
             </select>
-            
 
+          <div>
+            {filter.map(product => (
+                <div key={product.id}>
+                    <h3>{product.title}</h3>
+                    <p>Precio: ${product.price}</p>
+                </div>))}
+            </div>
         </div>
     )
+
+    
 }
 
 export default Filter
