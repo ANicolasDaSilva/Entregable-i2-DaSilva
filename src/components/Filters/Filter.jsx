@@ -3,7 +3,7 @@ import { data } from "react-router";
 
 function Filter (){
 
-    const [filter, setFilter] = useState(data)
+    const [filter, setFilter] = useState("all")
 
     useEffect(() => {
         (async () => {
@@ -16,8 +16,6 @@ function Filter (){
             }
         })();
     }, []);
-
-
 
     return(
         <div>
@@ -33,13 +31,13 @@ function Filter (){
                 <option onClick={()=> setFilter("sweaters")}> Sweaters </option>
             </select>
 
-          <div>
-            {filter.map(product => (
-                <div key={product.id}>
-                    <h3>{product.title}</h3>
-                    <p>Precio: ${product.price}</p>
-                </div>))}
-            </div>
+            <ul>
+                {filter.map(product => (
+                    <li key={product.id}>
+                        {product.title} -
+                        {product.category}
+                    </li>))}
+            </ul>
         </div>
     )
 
