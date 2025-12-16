@@ -1,10 +1,11 @@
- import ProductDetail from "../ProductDetail/ProductDetail";
+import ProductDetail from "../ProductDetail/ProductDetail";
 import "./ProductListContainer.css";
 import { useEffect, useState } from "react";
 
 function ProductListContainer() {
 
     const [products,setProducts] = useState([])
+    
 
     useEffect(() => {
         (async () => {
@@ -20,11 +21,9 @@ function ProductListContainer() {
 
   return (
     <div className="productListContainer">
-        {
-            products.map((product)=>{
+        {products.map((product)=>{
                 return <ProductDetail key={product.id} product={product}/>
             })
-
         }
     </div>
   );
