@@ -4,7 +4,7 @@ import { useParams } from "react-router"
 function SeeDetail () {
 
     const {productId} = useParams()
-    const {product, setProduct} = useState({})
+    const [product, setProduct] = useState("")
     
     useEffect(() =>{
         (async()=>{

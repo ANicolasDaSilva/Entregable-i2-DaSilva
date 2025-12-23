@@ -1,4 +1,4 @@
-import Filters from "./Filters/Filter";
+import Filter from "./Filters/Filter";
 import Navbar from "./Navbar/Navbar";
 import ProductListContainer from "./ProductListContainer/ProductListContainer";
 
@@ -8,7 +8,6 @@ function Container(){
         <div>
             <Navbar/>
             <ProductListContainer/>
-            <Filters/> 
         </div>
     )
 }

@@ -1,32 +1,21 @@
-import { useEffect, useState } from "react"
 
-function Filter (){
-
-    const [category, setCategory] = useState()
-
-    useEffect(() => {
-        document.title = `Categoria: ${category}`
-        console.log(`Categoría seleccionada: ${category}`)
-    }, [category])
-
-    const categorySelector = (category) => {
-        setCategory(category)
-    }
+function Filters ({category, setCategory}) {
 
     return(
         <div>
-            <label> {category} Categorias: </label>
-            <select>
-                <option onClick={()=> categorySelector("Abrigos")}> Abrigos </option>
-                <option onClick={()=> categorySelector("Remeras")}> Remeras </option>
-                <option onClick={()=> categorySelector("Pantalones")}> Pantalones </option>
-                <option onClick={()=> categorySelector("Vestidos")}> Vestidos </option>
-                <option onClick={()=> categorySelector("Camisas")}> Camisas </option>
-                <option onClick={()=> categorySelector("Buzos")}> Buzos </option>
-                <option onClick={()=> categorySelector("Sweaters")}> Sweaters </option>
+            <label> Categorias: </label>
+            <select onChange={(e) => setCategory(e.target.value)} value={category}>
+                <option value ="" > Todo </option>
+                <option value ="Abrigos"> Abrigos </option>
+                <option value ="Remeras"> Remeras </option>
+                <option value ="Pantalones"> Pantalones </option>
+                <option value ="Vestidos"> Vestidos </option>
+                <option value ="Camisas"> Camisas </option>
+                <option value ="Buzos"> Buzos </option>
+                <option value ="Sweaters"> Sweaters </option>
             </select>
         </div>
     )
 }
 
-export default Filter
+export default Filters

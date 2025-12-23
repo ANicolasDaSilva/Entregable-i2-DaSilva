@@ -1,12 +1,13 @@
 import ProductDetail from "../ProductDetail/ProductDetail";
 import "./ProductListContainer.css";
 import { useEffect, useState } from "react";
+import Filter from "../Filters/Filter";
 
 function ProductListContainer() {
 
     const [products,setProducts] = useState([])
+    const [category, setCategory] = useState("")
     
-
     useEffect(() => {
         (async () => {
             try {
@@ -19,12 +20,22 @@ function ProductListContainer() {
         })();
     }, []);
 
+    let filterProducts;
+
+    if (category) {
+        filterProducts = products.filter(product => product.category === category)
+    }else {
+        filterProducts = products
+    }
+
   return (
-    <div className="productListContainer">
-        {products.map((product)=>{
-                return <ProductDetail key={product.id} product={product}/>
-            })
-        }
+    <div>
+        <Filter category={category} setCategory={setCategory}/>
+
+        <div className="productListContainer">
+            {filterProducts.map(product=> (
+            <ProductDetail key={product.id} product={product}/>))}
+        </div>
     </div>
   );
 }
