@@ -1,4 +1,3 @@
-import Filter from "./Filters/Filter";
 import Navbar from "./Navbar/Navbar";
 import ProductListContainer from "./ProductListContainer/ProductListContainer";
 

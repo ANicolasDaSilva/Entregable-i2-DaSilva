@@ -4,7 +4,7 @@ import { useParams } from "react-router"
 function SeeDetail () {
 
     const {productId} = useParams()
-    const [product, setProduct] = useState("")
+    const [product, setProduct] = useState([])
     
     useEffect(() =>{
         (async()=>{
@@ -21,9 +21,9 @@ function SeeDetail () {
 
     return (
         <div>
-            <h2>{product.title}</h2>
+            <h2>Nombre: {product.title}</h2>
             <p>{product.description}</p>
-            <span>{product.price}</span>
+            <span>Precio: {product.price}</span>
         </div>
     )
 }

@@ -22,7 +22,7 @@ function ProductDetail ({product}){
                     <ShoppingCart size={32} strokeWidth={1.75} />
                     Carrito
                 </button>
-                <button>
+                <button onClick={navigateSeeDetail}>
                     <Eye size={32} strokeWidth={1.75} onClick={navigateSeeDetail}/>
                     Ver detalles
                 </button>
