@@ -8,7 +8,7 @@ function Navbar() {
     
       <nav className="navbar">
         <ul>
-          <li> Baul </li>
+          <li> <NavLink to="./"> Baul </NavLink> </li>
           <li> <NavLink to="./contact"> Contactos </NavLink> </li>
         </ul>
         <Filters/>

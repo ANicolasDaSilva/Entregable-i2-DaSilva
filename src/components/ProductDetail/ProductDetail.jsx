@@ -3,19 +3,33 @@ import Quantity from "../Quantity/Quantity"
 import "./ProductDetail.css"
 import { ShoppingCart } from "lucide-react"
 import { Eye } from "lucide-react"
+import { useContext } from "react"
+import { CartContext } from "../CartContext/CartContext"
+import useCount from "../../hook/useCount"
 
 function ProductDetail ({product}){
 
     const navigate = useNavigate()
+    const {addCart} = useContext(CartContext)
+    const {quantity, less, add} = useCount({initial:1, stock:product.stock})
+
     const navigateSeeDetail = () => {
         navigate(`/see-detail/${product.id}`)
+    }
+
+    const handleAddCart = () => {
+        const newProduct = {
+            id: product.id,
+            quantity: quantity
+        }
+        addCart(newProduct)
     }
 
     return(
         <div className="productDetail">
             <h3>{product.title}</h3>
             <p>{product.description}</p>
-            <Quantity stock = {product.stock}/>
+            <Quantity quantity={quantity} less={less} add={add}/>
             <span>{product.price} U$S </span>
             <div  className="btn-cart">
                 <button>
