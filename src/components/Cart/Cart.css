@@ -1,7 +1,12 @@
+.cart{
+    display: flex;
+}
+
 .cart-select{
     background-color: white;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     width: 250px;
     gap: 30px;
     border: solid rgb(0, 0, 0) 3px;

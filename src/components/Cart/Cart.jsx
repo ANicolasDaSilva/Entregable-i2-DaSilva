@@ -27,16 +27,19 @@ function Cart (){
                 <Navbar/>  
             </nav>
             
-            {cart.map(cartProduct =>{
-                const dataProduct = products.find(product => product.id === cartProduct.id)
-                return (
-                <div key={cartProduct.id} className="cart-select">
-                    <h3>{dataProduct?.title}</h3>   
-                    <span>{dataProduct?.price} U$S</span>
-                    <button onClick={() => deleteCart(cartProduct.id)}> Eliminar del carrito </button>
-                </div>
-            )}
-            )}
+            <div className="cart">
+                {cart.map(cartProduct =>{
+                    const dataProduct = products.find(product => product.id === cartProduct.id)
+                    return (
+                    <div key={cartProduct.id} className="cart-select">
+                        <h3>{dataProduct?.title}</h3>   
+                        <span>{dataProduct?.price} U$S</span>
+                        <span> Cantidad seleccionada: {cartProduct?.quantity}</span>
+                        <button onClick={() => deleteCart(cartProduct.id)}> Eliminar del carrito </button>
+                    </div>
+                )}
+                )}
+            </div>
         </div>
         
     )
