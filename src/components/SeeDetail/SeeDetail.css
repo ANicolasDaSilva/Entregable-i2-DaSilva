@@ -1,4 +1,4 @@
-.productDetail{
+.product-detail{
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -8,16 +8,4 @@
     border-radius: 4px;
     padding: 20px;
     margin: 50px;
-}
-
-.btn-cart{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    gap: 40px
-}
-
-button{
-    cursor: pointer;
 }

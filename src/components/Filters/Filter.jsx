@@ -1,10 +1,11 @@
+import "./Filter.css"
 
 function Filters ({category, setCategory}) {
 
     return(
-        <div>
-            <label> Categorias: </label>
-            <select onChange={(e) => setCategory(e.target.value)} value={category}>
+        <div className="category-bar">
+            <label className="category"> Categorias: </label>
+            <select onChange={(e) => setCategory(e.target.value)} value={category} className="category-select">
                 <option value ="" > Todo </option>
                 <option value ="Abrigos"> Abrigos </option>
                 <option value ="Remeras"> Remeras </option>

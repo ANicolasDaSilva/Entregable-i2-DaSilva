@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import Container from "./components/Container"
 import Contacts from './components/Contacts/Contacts';
 import SeeDetail from './components/SeeDetail/SeeDetail';
-import Cart from './components/Cart';
+import Cart from './components/Cart/Cart';
 import CartProvider from './components/CartContext/CartContext';
 
 function App() {

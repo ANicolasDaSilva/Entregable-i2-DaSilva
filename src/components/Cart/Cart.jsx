@@ -1,8 +1,11 @@
 import { useContext, useEffect, useState } from "react"
-import { CartContext } from "./CartContext/CartContext"
+import { CartContext } from "../CartContext/CartContext"
+import "./Cart.css"
+import Navbar from "../Navbar/Navbar"
+import { Link } from "react-router"
 
 function Cart (){
-    const {cart} = useContext(CartContext)
+    const {cart, deleteCart} = useContext(CartContext)
 
         const [products,setProducts] = useState([])
         
@@ -20,17 +23,22 @@ function Cart (){
 
     return (
         <div>
+            <nav>
+                <Navbar/>  
+            </nav>
+            
             {cart.map(cartProduct =>{
                 const dataProduct = products.find(product => product.id === cartProduct.id)
                 return (
-                <div key={cartProduct.id}>
-                    <h3>{dataProduct?.title}</h3>
-                    <span></span>
+                <div key={cartProduct.id} className="cart-select">
+                    <h3>{dataProduct?.title}</h3>   
+                    <span>{dataProduct?.price} U$S</span>
+                    <button onClick={() => deleteCart(cartProduct.id)}> Eliminar del carrito </button>
                 </div>
             )}
             )}
-            <p>carrito</p>
         </div>
+        
     )
 }
 

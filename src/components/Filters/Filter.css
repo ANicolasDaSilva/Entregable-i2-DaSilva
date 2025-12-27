@@ -1,0 +1,19 @@
+.category-bar{
+    background-color: brown;
+    display: flex;
+}
+
+.category{
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    padding: 10px;
+}
+
+.category-select{
+    font-size: 20px;
+    text-align: center;
+}

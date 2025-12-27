@@ -11,7 +11,7 @@ function CartWidget (){
     return (
         <div>
             <Link to={"/cart"} className="cartWidget">
-                <ShoppingBasket size={48} />
+                <ShoppingBasket size={48} color="#FC9F0F"/>
                 <span className="counter">
                     {totalQuantity}
                 </span>

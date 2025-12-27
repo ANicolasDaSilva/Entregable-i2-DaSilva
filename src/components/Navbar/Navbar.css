@@ -2,19 +2,24 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: grey;
+    background-color: #000000;
 }
 
 ul{
     display: flex;
     padding: 20px;
-    gap:30px
+    gap:50px
+
 }
 
 li{
-    color: black;
-    font-size: 30px;
-    text-decoration: none;
-    list-style: none;
+    font-size: 40px;
     font-weight: bolder;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
 }
