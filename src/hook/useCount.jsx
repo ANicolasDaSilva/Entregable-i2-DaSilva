@@ -6,7 +6,7 @@ function useCount({initial=1, stock}){
 
     const less = () => {
         if(count > 1){
-            setCount(count -1);
+            setCount(count - 1);
         }
     }
 
@@ -16,11 +16,11 @@ function useCount({initial=1, stock}){
         }
     }
 
-    return(
-        count,
+    return{
+        quantity: count,
         less,
         add
-    )
+    }
 }
 
 export default useCount

@@ -1,6 +1,5 @@
 import "./Navbar.css"
-import Filters from "../Filters/Filter";
-import CartWidget from "../Cartwidget/CartWidget"
+import CartWidget from "../CartWidget/CartWidget"
 import { NavLink } from "react-router";
 
 function Navbar() {
@@ -11,7 +10,6 @@ function Navbar() {
           <li> <NavLink to="./"> Baul </NavLink> </li>
           <li> <NavLink to="./contact"> Contactos </NavLink> </li>
         </ul>
-        <Filters/>
         <CartWidget/>
       </nav>
     

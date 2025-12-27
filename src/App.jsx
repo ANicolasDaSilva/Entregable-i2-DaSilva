@@ -5,14 +5,12 @@ import Contacts from './components/Contacts/Contacts';
 import SeeDetail from './components/SeeDetail/SeeDetail';
 import Cart from './components/Cart';
 import CartProvider from './components/CartContext/CartContext';
-import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
     <>
     <CartProvider>
       <BrowserRouter>
-        <Navbar/>
         <Routes>
           <Route path='/' element={<Container/>}/>
           <Route path="/contact" element={<Contacts/>}/>

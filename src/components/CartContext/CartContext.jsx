@@ -15,13 +15,14 @@ function CartProvider ({children}){
         const productFound = cart.find(product => product.id === newProduct.id)
 
         if (productFound){
-            setCart(cart.map(product => {
+            const setCart = cart.map(product => {
                 if(product.id === newProduct.id){
-                    product.quantity = product.quantity + newProduct.quantity
-                    return
+                    return {
+                        ...product, quantity : product.quantity + newProduct.quantity
+                    }
                 }
                 return product
-            }))
+            })
             return 
         }
 

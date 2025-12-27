@@ -32,7 +32,7 @@ function ProductDetail ({product}){
             <Quantity quantity={quantity} less={less} add={add}/>
             <span>{product.price} U$S </span>
             <div  className="btn-cart">
-                <button>
+                <button onClick={handleAddCart}>
                     <ShoppingCart size={32} strokeWidth={1.75} />
                     Carrito
                 </button>
