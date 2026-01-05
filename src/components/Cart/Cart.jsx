@@ -21,6 +21,14 @@ function Cart (){
             })();
         }, []);
 
+        const totalPrice = cart.reduce((acc, cartProduct) =>{
+            const dataProduct = products.find(product => product.id === cartProduct.id)
+            
+            if (!dataProduct) return acc
+
+            return acc + dataProduct.price * cartProduct.quantity
+        },0)
+
     return (
         <div>
             <nav>
@@ -35,10 +43,15 @@ function Cart (){
                         <h3>{dataProduct?.title}</h3>   
                         <span>{dataProduct?.price} U$S</span>
                         <span> Cantidad seleccionada: {cartProduct?.quantity}</span>
-                        <button onClick={() => deleteCart(cartProduct.id)}> Eliminar del carrito </button>
+                        <button onClick={() => deleteCart(cartProduct.id)} className="delete-btn"> Eliminar del carrito </button>
                     </div>
                 )}
                 )}
+
+            <div className="total">
+                <h2>Total: {totalPrice} U$S</h2>
+                <button onClick={() => alert("¡Compra realizada!")} className="buy-btn"> Comprar </button>
+            </div>
             </div>
         </div>
         

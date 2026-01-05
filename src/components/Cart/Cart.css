@@ -1,11 +1,11 @@
 .cart{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .cart-select{
     background-color: white;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     width: 250px;
     gap: 30px;
@@ -13,4 +13,18 @@
     border-radius: 4px;
     padding: 20px;
     margin: 50px;
+}
+
+.delete-btn{
+    padding: 10px;
+}
+
+.total{
+    margin: 50px;
+    padding: 20px;
+}
+
+.buy-btn {
+    margin: 20px;
+    padding: 10px;
 }
