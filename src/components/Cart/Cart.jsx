@@ -5,7 +5,7 @@ import Navbar from "../Navbar/Navbar"
 import { Link } from "react-router"
 
 function Cart (){
-    const {cart, deleteCart} = useContext(CartContext)
+    const {cart, deleteCart, limpiarCart} = useContext(CartContext)
 
         const [products,setProducts] = useState([])
         
@@ -50,7 +50,9 @@ function Cart (){
 
             <div className="total">
                 <h2>Total: {totalPrice} U$S</h2>
-                <button onClick={() => alert("¡Compra realizada!")} className="buy-btn"> Comprar </button>
+                <button onClick={() => { 
+                    alert("¡Compra realizada!") 
+                    limpiarCart()}} className="buy-btn"> Comprar </button>
             </div>
             </div>
         </div>

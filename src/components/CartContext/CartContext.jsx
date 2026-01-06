@@ -33,8 +33,12 @@ function CartProvider ({children}){
         setCart(cart.filter(product => product.id !== id))
     }
 
+    const limpiarCart = () => {
+        setCart([])
+    }
+
     return (
-        <CartContext.Provider value = {{cart, totalQuantity, addCart, deleteCart}}>
+        <CartContext.Provider value = {{cart, totalQuantity, addCart, deleteCart, limpiarCart}}>
             {children}
         </CartContext.Provider>
     )
