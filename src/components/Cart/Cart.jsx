@@ -3,6 +3,7 @@ import { CartContext } from "../CartContext/CartContext"
 import "./Cart.css"
 import Navbar from "../Navbar/Navbar"
 import { Link } from "react-router"
+import Swal from "sweetalert2"
 
 function Cart (){
     const {cart, deleteCart, limpiarCart} = useContext(CartContext)
@@ -51,7 +52,12 @@ function Cart (){
             <div className="total">
                 <h2>Total: {totalPrice} U$S</h2>
                 <button onClick={() => { 
-                    alert("¡Compra realizada!") 
+                    Swal.fire({
+                        title: '¡Compra realizada!',
+                        text: 'Muchas gracias por tu compra',
+                        icon: 'sucess',
+                        confirmButtonText: 'Aceptar'
+                    })
                     limpiarCart()}} className="buy-btn"> Comprar </button>
             </div>
             </div>
