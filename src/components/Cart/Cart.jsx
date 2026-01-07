@@ -51,7 +51,7 @@ function Cart (){
 
             <div className="total">
                 <h2>Total: {totalPrice} U$S</h2>
-                <button onClick={() => { 
+                <button type="button" onClick={() => { 
                     Swal.fire({
                         title: '¡Compra realizada!',
                         text: 'Muchas gracias por tu compra',

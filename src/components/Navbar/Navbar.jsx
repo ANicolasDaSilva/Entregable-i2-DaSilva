@@ -8,7 +8,7 @@ function Navbar() {
       <nav className="navbar">
         <ul>
           <li className="link"> <NavLink to="/"> Baul </NavLink> </li>
-          <li className="link"> <NavLink to="./contact"> Contactos </NavLink> </li>
+          <li className="link"> <NavLink to="/contact"> Contactos </NavLink> </li>
         </ul>
         <CartWidget/>
       </nav>
